@@ -16,6 +16,7 @@ const checkPassword = (dbPassword, password) => {
 }
 
 exports.register = async (req, res, next) => {
+       console.log(res)
 	try {
 		const hashedPassword = AES.encrypt(
 			req.body.password,
@@ -28,6 +29,7 @@ exports.register = async (req, res, next) => {
 
 		res.json({ message: 'Register successfully' })
 	} catch (error) {
+		console.log(error,"err")
 		next(error)
 	}
 }
