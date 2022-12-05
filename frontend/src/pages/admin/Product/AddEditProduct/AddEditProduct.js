@@ -62,6 +62,7 @@ const AddEditProduct = () => {
 	const [imagesUpload, setImagesUpload] = useState([])
 
 	useEffect(() => {
+		console.log(location.state,"state")
 		if (location.state) {
 			reset({
 				name: location.state.name,

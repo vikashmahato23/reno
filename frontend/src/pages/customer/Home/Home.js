@@ -18,7 +18,7 @@ const Home = () => {
 			<CustomerLayout>
 				<Banner />
 				<Category />
-				{/* <LastestProducts /> */}
+				<LastestProducts />
 			</CustomerLayout>
 		</>
 	)

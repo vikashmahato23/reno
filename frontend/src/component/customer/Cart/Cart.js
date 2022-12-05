@@ -205,7 +205,7 @@ const Cart = () => {
 												style={{ justifyContent: 'flex-start' }}
 											>
 												<img
-													src={product.product.images[0].preview}
+													src={product.product.images[0]}
 													alt="product"
 													className={classes.imgProduct}
 												/>

@@ -30,6 +30,7 @@ export const getProduct = createAsyncThunk(
 export const addProduct = createAsyncThunk(
 	'product/addProduct',
 	async (data, { rejectWithValue, dispatch }) => {
+		console.log(data,"add")
 		try {
 			const result = await productAPI.addProduct(data)
 

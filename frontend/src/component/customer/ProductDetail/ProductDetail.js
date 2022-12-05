@@ -182,7 +182,7 @@ const ProductDetail = () => {
 									>
 										{product?.images?.map((image) => (
 											<Box style={{ position: 'relative' }}>
-												<img src={image.preview} alt="product" />
+												<img src={image} alt="product" />
 												{!product.inStock && (
 													<Typography
 														component="p"
