@@ -7,11 +7,15 @@ const uploadAPI = {
 			formData.append('files', file)
 		})
 
-		return await axiosClient.post('/upload', formData, {
-			headers: {
-				'Content-Type': 'multipart/form-data',
-			},
-		})
+		return await axiosClient.post(
+      "https://backen-production-351c.up.railway.app/api/v1/upload",
+      formData,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      }
+    );
 	},
 }
 
